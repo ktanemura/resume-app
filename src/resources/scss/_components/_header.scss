@@ -1,0 +1,26 @@
+.header {
+    .crest {
+        width: 30%;
+        max-width: 400px;
+        border-radius: 50%;
+
+        animation: float 6s ease-in-out infinite;
+        fill: $color-primary;
+
+        @media (min-width: 768px) {
+            & {
+                width: 40%;
+            }
+        }
+    }
+
+    .text-box {
+        background: $color-primary-dark;
+        max-width: 325px;
+        margin: auto;
+        padding: 20px 30px;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.39) !important;
+        // animation: float 6s ease-in-out infinite;
+    }
+}

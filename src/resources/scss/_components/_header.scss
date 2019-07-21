@@ -19,8 +19,30 @@
         max-width: 325px;
         margin: auto;
         padding: 20px 30px;
+        overflow: hidden;
         box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4),
         0 6px 20px 0 rgba(0, 0, 0, 0.39) !important;
         // animation: float 6s ease-in-out infinite;
+    }
+
+    .header-motto {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        
+        &:not(.loading) {
+            left: calc(325px + 35px);
+        }
+
+        &.active {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-name: ticker;
+            animation-name: ticker;
+            -webkit-animation-duration: calc(((681s * 0.88) + 36s) / 9.5);
+            animation-duration: calc(((681s * 0.88) + 36s) / 9.5);
+        }
     }
 }
